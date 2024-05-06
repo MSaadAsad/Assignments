@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.generic-container {
+    padding: 30px;
+    border-radius: 8px;
+    margin: 25px auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.list {
+    background-color: #F3F6F9;
+    font-weight: bold;
+    border: 1px solid #E5E5E5;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.list > .collapsible-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.subtask {
+    background-color: #f7f7f7;
+    margin-left: 30px;
+    padding: 12px 18px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button, select {
+    padding: 6px 12px;
+    margin: 6px 0;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    background-color: #F7F7F7;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    appearance: none;
+    outline: none;
+}
+
+button:hover, button:focus {
+    background-color: #E1E8ED;
+    transform: scale(1.05);
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+button.delete {
+    background: url('../../assets/delete_button.png') no-repeat center;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    margin: 0 6px;
+}
+
+button.edit {
+    background: url('../../assets/edit_button.png') no-repeat center;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    margin: 0 6px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.collapsible-icon {
+    cursor: pointer;
+    margin-right: 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.collapsible-icon.collapsed {
+    transform: rotate(90deg);
+}
+
+.task-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.task-text {
+    margin-left: 10px;
+}
+
+.task-container {
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+}
